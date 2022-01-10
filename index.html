@@ -17,7 +17,7 @@
 
         .textbox {
             color: #091D34;
-            padding-right: 500px;
+            padding-right: 400px;
             padding-left: 500px;
         }
 
@@ -27,12 +27,17 @@
         }
 
         #content-container {
-            width:  75%;
+            width:  85%;
             float: left;
         }
 
+        #sidebar-container {
+            position: relative;
+        }
+
         #sidebar {
-            margin-left: 75%;
+            margin-left: 85%;
+            position: fixed;
         }
 
         header {
@@ -46,13 +51,15 @@
 
 <body>
     <div id="main-container">
+
+        <header class="text-center">
+            <h1 class="intro pt-5 font-weight-bold">F21 Work Term Report</h1>
+            <h2 class="subtitles font-weight-bold">Brayden Pritchard</h2>
+            <h3 class="subtitles font-weight-bold">Employer: University of Guelph Communications and Public Affairs Division</h3>
+            <h3 class="subtitles pb-5 font-weight-bold">Position: Web Developer/Data Analyst</h3>
+        </header>
+
         <div id="content-container">
-            <header class="text-center">
-                <h1 class="intro pt-5 font-weight-bold">F21 Work Term Report</h1>
-                <h2 class="subtitles font-weight-bold">Brayden Pritchard</h2>
-                <h3 class="subtitles font-weight-bold">Employer: University of Guelph Communications and Public Affairs Division</h3>
-                <h3 class="subtitles pb-5 font-weight-bold">Position: Web Developer/Data Analyst</h3>
-            </header>
 
             <h1 id="intro" class="body-header">Introduction</h1>
 
@@ -146,18 +153,20 @@
                 I want to thank my supervisor James Harris for the great advice and guidance while I was working this position. I would also like to thank the rest of the Communications team for being a friendly group to work around, albeit a small amount time I was around in meetings since we were online.
             </p>
         </div>
-        <div id="sidebar">
-            <h1 class="body-header">Table of Contents</h1>
-            <nav>
-                <h2><a href="#intro" class="body-header">Introduction</a></h2>
-                <h2><a href="#info" class="body-header">Employer Information</a></h2>
-                <h2><a href="#goals" class="body-header">Learning Goals</a></h2>
-                <h2><a href="#job" class="body-header">Job Description</a></h2>
-                <h2><a href="#conclusion" class="body-header">Conclusions</a></h2>
-                <h2><a href="#acknow" class="body-header">Acknowledgements</a></h2>
-            </nav>
-
+        <div id="sidebar-container">
+            <div id="sidebar">
+                <h1 class="body-header">Table of Contents</h1>
+                <nav>
+                    <h2><a href="#intro" class="body-header">Introduction</a></h2>
+                    <h2><a href="#info" class="body-header">Employer Information</a></h2>
+                    <h2><a href="#goals" class="body-header">Learning Goals</a></h2>
+                    <h2><a href="#job" class="body-header">Job Description</a></h2>
+                    <h2><a href="#conclusion" class="body-header">Conclusions</a></h2>
+                    <h2><a href="#acknow" class="body-header">Acknowledgements</a></h2>
+                </nav>
+            </div>
         </div>
+
     </div>
 
 </body>
