@@ -57,12 +57,31 @@
             text-align: center;
             padding: 5px;
         }
+
+        .footer {
+            background: #2f2f2f;
+            position: absolute;
+            bottom: height;
+            width: 100%;
+            text-align: center;
+        }
+
+        #footer-text {
+            color: #f0f0f0;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
     </style>
 
 </head>
 
 <body>
-    <div id="main-container">
+    <div class="row">
 
         <header class="text-center">
             <h1 class="intro pt-5 font-weight-bold">F21 Work Term Report</h1>
@@ -179,6 +198,10 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="footer">
+        <p id="footer-text">&copy; 2022 Brayden Pritchard</p>
     </div>
 
 </body>
